@@ -1,10 +1,5 @@
 #include "stdafx.h"
-#include <iostream>
 #include <SDL.h>
-#include <SDL_image.h>
-#include <stdlib.h>
-#include <time.h>
-#include <cmath>
 #include "Field.h"
 #include "FieldDisplay.h"
 #include "Snake.h"
