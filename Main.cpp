@@ -5,8 +5,6 @@
 #include "Snake.h"
 
 int main(int argc, char *argv[]) {
-	//#[Kookie]
-
 	int arrayHeight = 20;
 	int arrayWidth = 20;
 	int pixelSize = 30;
@@ -110,7 +108,5 @@ int main(int argc, char *argv[]) {
 	window = NULL;
 
 	SDL_Quit();
-	IMG_Quit();
 	return EXIT_SUCCESS;
-	//#[/Kookie]
 }
