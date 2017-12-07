@@ -9,26 +9,6 @@
 #include "FieldDisplay.h"
 #include "Snake.h"
 
-typedef struct acc {
-	double angle;
-	double acce;
-}acc;
-
-SDL_Texture *loadTexture(std::string filepath, SDL_Renderer *renderTarget) {
-	SDL_Texture *texture = NULL;
-	SDL_Surface *surface = SDL_LoadBMP(filepath.c_str());
-
-	if (!surface)std::cout << "Error8:" << IMG_GetError() << std::endl;
-	else {
-		texture = SDL_CreateTextureFromSurface(renderTarget, surface);
-		if (!texture)std::cout << "Error9:" << SDL_GetError() << std::endl;
-	}
-	SDL_FreeSurface(surface);
-	surface = NULL;
-
-	return texture;
-}
-
 int main(int argc, char *argv[]) {
 	//#[Kookie]
 
